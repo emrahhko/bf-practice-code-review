@@ -1,11 +1,12 @@
-/** .........
- * Sum of two numbers.
+/**
+ * Sort an numbers from smallest to largest.
  *
- * @param {number} num1 - The first number to sum.
- * @param {number} num2 - The second number to sum.
- * @returns {number} The sum of num1 and num2.
+ * @param {Array} arr - The array of number to sort.
+ * @returns {Array} The sorted new array.
  */
 
-export const solutionName = (num1, num2) => {
-    return num1 + num2;
+export const sortNumbers = (arr = []) => {
+    const newArr = [...arr];
+    newArr.sort((a, b) => a - b);
+    return newArr;
 };
